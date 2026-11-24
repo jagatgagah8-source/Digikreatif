@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Detail Template | DigiKreatif</title>
+
+    <style>
+        /* Gambar di halaman detail tampil utuh sesuai ukuran aslinya (tidak dipotong) */
+        .detail .thumb {
+            aspect-ratio: auto;
+            background: #fff;
+        }
+
+        .detail .thumb img {
+            position: static;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* desain contoh disembunyikan kalau gambar asli ada */
+        .detail .thumb:has(img) svg {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="hdr"></div>
+
+    <main>
+
+        <section class="wrap" style="padding-top:36px">
+            <div class="detail" id="detail"></div>
+        </section>
+
+        <section class="wrap" style="padding-top:0">
+            <div class="sec-head">
+                <h2>Template lain yang mungkin cocok</h2>
+            </div>
+
+            <div class="grid" id="rel"></div>
+        </section>
+
+    </main>
+
+    <div id="ftr"></div>
+
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
